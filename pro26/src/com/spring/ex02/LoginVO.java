@@ -1,11 +1,18 @@
 package com.spring.ex02;
 
-import lombok.Data;
-
-@Data
-// 데이터 저장용
 public class LoginVO {
 	private String userID;
 	private String userName;
-
-} // class 끝
+	public String getUserID() {
+		return userID;
+	}
+	public void setUserID(String userID) {
+		this.userID = userID;
+	}
+	public String getUserName() {
+		return userName;
+	}
+	public void setUserName(String userName) {
+		this.userName = userName;
+	}
+}
