@@ -50,10 +50,10 @@ public class TestController {
 			
 			MemberVO vo = new MemberVO();
 			
-			vo.setId("비" + i);
+			vo.setId("gugu" + i);
 			vo.setPwd("9999" + i);
-			vo.setName("둘기" + i);
-			vo.setEmail("비" + i + "@test.com");
+			vo.setName("비둘기" + i);
+			vo.setEmail("gugu" + i + "@test.com");
 			
 			list.add(vo);
 		}
@@ -67,10 +67,10 @@ public class TestController {
 		for (int i = 0; i < 10; i++) {
 			
 			MemberVO vo = new MemberVO();
-			vo.setId("비" + i);
+			vo.setId("gugu" + i);
 			vo.setPwd("9999" + i);
-			vo.setName("둘기" + i);
-			vo.setEmail("비" + i + "@test.com");
+			vo.setName("비둘기" + i);
+			vo.setEmail("gugu" + i + "@test.com");
 			
 			map.put(i, vo);
 		}
@@ -99,10 +99,10 @@ public class TestController {
 		for (int i = 0; i < 10; i++) {
 			
 			MemberVO vo = new MemberVO();
-			vo.setId("비" + i);
+			vo.setId("gugu" + i);
 			vo.setPwd("9999" + i);
-			vo.setName("둘기" + i);
-			vo.setEmail("비" + i + "@test.com");
+			vo.setName("비둘기" + i);
+			vo.setEmail("gugu" + i + "@test.com");
 			
 			list.add(vo);
 			
