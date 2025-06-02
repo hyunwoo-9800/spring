@@ -87,6 +87,10 @@ public class BoardControllerImpl implements BoardController {
 		articleMap.put("parentNO", 0);
 		articleMap.put("id", id);
 		articleMap.put("imageFileName", imageFileName);
+		
+		System.out.println(articleMap.get("parentNO"));
+		System.out.println(articleMap.get("id"));
+		System.out.println(articleMap.get("imageFileName"));
 
 		String message;
 		ResponseEntity resEnt = null;

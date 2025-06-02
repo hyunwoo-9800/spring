@@ -33,11 +33,7 @@ public class MemberControllerImpl implements MemberController {
 	@RequestMapping(value = { "/", "/main.do" }, method = RequestMethod.GET)
 	private ModelAndView main(HttpServletRequest request, HttpServletResponse response) {
 
-		System.out.println(">>> main.do 컨트롤러 진입함");
-
 		String viewName = (String) request.getAttribute("viewName");
-		System.out.println(">>> viewName: " + viewName); // null이면 문제가 여기 있음
-
 		ModelAndView mav = new ModelAndView();
 		mav.setViewName(viewName);
 		return mav;
