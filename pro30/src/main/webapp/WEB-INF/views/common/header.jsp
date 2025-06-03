@@ -17,7 +17,7 @@
 			<tr>
 				<td>
 					<a href="${contextPath}/main.do">
-					<img src="${contextPath}/resources/image/duke_swing.gif" />
+						<img src="${contextPath}/resources/image/duke_swing.gif" />
 					</a>
 				</td>
 				

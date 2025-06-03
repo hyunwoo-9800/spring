@@ -19,38 +19,91 @@
 				</script>
 			</c:when>
 		</c:choose>
+		
+		<style type="text/css">
+			#sidebar-left {
+				width: 15%;
+				height: 700px;
+				padding: 5px;
+				margin-right: 5px;
+				margin-bottom: 5px;
+				float: left;
+				background-color: yellow;
+				border: 0px solid #bcbcbc;
+				font-size: 10px;
+			}
+			
+			#container {
+				width: 100%;
+				margin: 0px auto;
+				text-align: center;
+				border: 0px solid #bcbcbc;
+			}
+			
+			#header {
+				padding: 5px;
+				margin-bottom: 5px;
+				border: 0px solid #bcbcbc;
+				background-color: lightgreen;
+			}
+			
+			#footer {
+				clear: both;
+				padding: 5px;
+				border: 0px solid #bcbcbc;
+				background-color: lightblue;
+			}
+			
+		</style>
+		
 	</head>
 
 	<body>
 	
-		<form name="frmLogin" method="post" action="${contextPath}/member/login.do">
+		<div id="container">
 		
-			<table border="1" width="80%" align="center">
+			<div id="header">
+				<jsp:include page="/WEB-INF/views/common/header.jsp" />
+			</div>
 			
-				<tr align="center">
-					<td>아이디</td>
-					<td>비밀번호</td>
-				</tr>
-				
-				<tr align="center">
-					<td>
-						<input type="text" name="id" value="" size="20">
-					</td>
-					<td>
-						<input type="password" name="pwd" value="" size="20">
-					</td>
-				</tr>
-				
-				<tr align="center">
-					<td colspan="2">
-						<input type="submit" value="로그인">
-						<input type="reset" value="다시입력">
-					</td>
-				</tr>
-				
-			</table>
+			<div id="sidebar-left">
+				<jsp:include page="/WEB-INF/views/common/side.jsp" />
+			</div>
+		
+			<form name="frmLogin" method="post" action="${contextPath}/member/login.do">
 			
-		</form>
+				<table border="1" width="80%" align="center">
+				
+					<tr align="center">
+						<td>아이디</td>
+						<td>비밀번호</td>
+					</tr>
+					
+					<tr align="center">
+						<td>
+							<input type="text" name="id" value="" size="20">
+						</td>
+						<td>
+							<input type="password" name="pwd" value="" size="20">
+						</td>
+					</tr>
+					
+					<tr align="center">
+						<td colspan="2">
+							<input type="submit" value="로그인">
+							<input type="reset" value="다시입력">
+						</td>
+					</tr>
+					
+				</table>
+				
+			</form>
+			
+			<div id="footer">
+				<jsp:include page="/WEB-INF/views/common/footer.jsp" />
+			</div>
+			
+		</div>
 		
 	</body>
 	

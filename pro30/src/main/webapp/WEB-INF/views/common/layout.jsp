@@ -64,6 +64,8 @@
 				<jsp:include page="/WEB-INF/views/common/side.jsp" />
 			</div>
 			
+			<h1>메인 페이지입니다!!</h1>
+			
 			<div id="content">
 				<jsp:include page="${bodyPage}" />
 			</div>
